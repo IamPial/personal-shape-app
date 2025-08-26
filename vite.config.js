@@ -1,18 +1,7 @@
 import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss({
-      theme: {
-        extend: {
-          fontFamily: {
-            times: ["'Times New Roman'", "Times", "serif"],
-          },
-        },
-      },
-    }),
-    react(),
-  ],
+  plugins: [tailwindcss(), react()],
 });

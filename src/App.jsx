@@ -50,9 +50,21 @@ const App = () => {
         </div>
         {/*Hero Section End */}
 
+        {/* About Section Start */}
         <div className="bg-white">
-          <div className="container mx-auto py-40"></div>
+          <div className="container mx-auto py-40">
+            <div className="text-center">
+              <Heading
+                classStyle="text-4xl text-color font-bold"
+                title="About Me"
+              />
+              <div className="flex justify-center items-center my-8">
+                <div className="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 hover:w-24"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        {/* About Section End */}
       </main>
     </div>
   );

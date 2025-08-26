@@ -1,3 +1,7 @@
 .text-color {
   color: #8453af;
 }
+
+.my-bg {
+  background-image: linear-gradient(to right, #7070d2, #d186e3);
+}

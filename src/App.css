@@ -1,14 +1,2 @@
 @import "tailwindcss";
-@plugins "daisyui";
-
-/* For custom font style */
-/* @font-face {
-  font-family: "Times New Roman Custom";
-  src: url("./src/assets/fonts/times.ttf") format("truetype");
-} */
-
-/* @layer base {
-  .font-times {
-    font-family: "Times New Roman", Times, serif !important;
-  }
-} */
+@plugin "daisyui";

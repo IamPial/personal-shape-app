@@ -5,6 +5,7 @@ import Span from "./components/span/Span";
 import Divider from "./components/span/divider";
 import Button from "./components/Button/button";
 import HeadingWithDivider from "./components/Headings/heading-with-divider";
+import ImgWithEffects from "./components/imageEffects/img-with-effects";
 
 const App = () => {
   return (
@@ -34,7 +35,7 @@ const App = () => {
               <Heading classStyle="text-6xl text-white capitalize font-bold mt-4 mb-6 leading-20">
                 transforming ideas <br /> into beautiful <br /> experiences
               </Heading>
-              <Paragraph classStyle="text-white">
+              <Paragraph classStyle="text-white text-lg font-semibold">
                 I craft digital experiences that captivate, engage, and inspire{" "}
                 <br />
                 through thoughtful design and innovative solutions
@@ -42,7 +43,7 @@ const App = () => {
             </div>
             <div className="flex items-center justify-center mt-12 flex-col">
               <Button
-                buttonStyle="px-10 py-5 cursor-pointer hover:bg-fuchsia-700 transition-all duration-300 hover:ring-fuchsia-700 ring-2 ring-fuchsia-200 text-white rounded-4xl font-medium text-sm bg-purple-400 mb-18"
+                buttonStyle="px-14 hover:shadow-2xl py-5 cursor-pointer  transition-all duration-300 hover:ring-fuchsia-200 ring-2 ring-fuchsia-200 text-white rounded-4xl font-medium text-sm bg-purple-400 mb-18"
                 type="button"
                 title="Explore My Work"
               />
@@ -54,7 +55,7 @@ const App = () => {
 
         {/* About Section Start */}
         <div className="bg-white">
-          <div className="container mx-auto py-40">
+          <div className="container mx-auto py-30">
             <HeadingWithDivider
               parentStyle="text-center group"
               headingTitle="About Me"
@@ -66,14 +67,13 @@ const App = () => {
             <section className="columns-2 mt-12">
               {/* Left Section */}
               <div className="py-12">
-                <div className="relative overflow-hidden rounded-lg transition-all duration-500 shadow-2xl w-125 ">
-                  <img
-                    src="./src/assets/images/smiling-girl-computer-desktop.jpg"
-                    alt="Profile"
-                    className=" object-cover filter transition-all duration-500 hover:hue-rotate-180 hover:saturate-150 hover:brightness-110 "
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/15 to-pink-500/15 hover:from-purple-500/10 hover:to-pink-500/10 transition-all duration-500 ease-in-out"></div>
-                </div>
+                <ImgWithEffects
+                  relativeStyle="relative overflow-hidden rounded-lg transition-all duration-500 shadow-2xl w-125"
+                  imgSrc="./src/assets/images/smiling-girl-computer-desktop.jpg"
+                  imgAlt="Profile"
+                  imgStyle=" object-cover filter transition-all duration-500 hover:hue-rotate-180 hover:saturate-150 hover:brightness-110 "
+                  absoluteStyle="absolute inset-0 bg-gradient-to-r from-purple-500/15 to-pink-500/15 hover:from-purple-500/10 hover:to-pink-500/10 transition-all duration-500 ease-in-out"
+                />
               </div>
 
               {/* Right Section */}
@@ -141,7 +141,144 @@ const App = () => {
 
         {/*Work Section Start*/}
         <div className="bg-white">
-          <Heading />
+          <div className="container mx-auto py-20 ">
+            <HeadingWithDivider
+              parentStyle="text-center group"
+              headingTitle="Featured Work"
+              headingStyle="text-5xl text-color font-bold"
+              dividerParentStyle="flex justify-center items-center my-8"
+              dividerChildStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
+            />
+
+            <div className=" mt-10">
+              <div className="card  bg-white w-96 shadow-sm ">
+                <figure className="h-48">
+                  <img src="./src/assets/images/card1.jpg" alt="Shoes" />
+                </figure>
+                <div className="card-body px-9 py-11">
+                  <h2 className="card-title text-gray-800 text-2xl">
+                    E-commerce Platform
+                  </h2>
+                  <p className="text-gray-500 text-base mb-5">
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div className="card-actions justify-start">
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="React"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Node.JS"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="MongoDB"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
+                      type="button"
+                      title="Stripe"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* <div className="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Card Title</h2>
+                  <p>
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div className="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Card Title</h2>
+                  <p>
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div className="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Card Title</h2>
+                  <p>
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div className="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Card Title</h2>
+                  <p>
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div className="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Card Title</h2>
+                  <p>
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div> */}
+            </div>
+          </div>
         </div>
         {/*Work Section End*/}
       </main>

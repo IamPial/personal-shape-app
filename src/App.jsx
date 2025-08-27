@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar/navbar";
 import Heading from "./components/Headings/heading";
 import Paragraph from "./components/Paragraph/paragraph";
 import Span from "./components/span/Span";
+import Divider from "./components/span/divider";
+import Button from "./components/Button/button";
 
 const App = () => {
   return (
@@ -38,12 +40,11 @@ const App = () => {
               </Paragraph>
             </div>
             <div className="flex items-center justify-center mt-12 flex-col">
-              <button
+              <Button
+                buttonStyle="px-10 py-5 cursor-pointer hover:bg-fuchsia-700 transition-all duration-300 hover:ring-fuchsia-700 ring-2 ring-fuchsia-200 text-white rounded-4xl font-medium text-sm bg-purple-400 mb-18"
                 type="button"
-                className="px-10 py-5 cursor-pointer hover:bg-fuchsia-700 transition-all duration-300 hover:ring-fuchsia-700 ring-2 ring-fuchsia-200 text-white rounded-4xl font-medium text-sm bg-purple-400 mb-18"
-              >
-                Explore My Work
-              </button>
+                title="Explore My Work"
+              />
               <Span classStyle="rounded-4xl ring-2 ring-fuchsia-300 px-5 py-8"></Span>
             </div>
           </div>
@@ -53,15 +54,83 @@ const App = () => {
         {/* About Section Start */}
         <div className="bg-white">
           <div className="container mx-auto py-40">
-            <div className="text-center">
+            <div className="text-center group">
               <Heading
-                classStyle="text-4xl text-color font-bold"
+                classStyle="text-5xl text-color font-bold"
                 title="About Me"
               />
-              <div className="flex justify-center items-center my-8">
-                <div className="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 hover:w-24"></div>
-              </div>
+              <Divider
+                parentStyle="flex justify-center items-center my-8"
+                childStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
+              />
             </div>
+
+            <section className="columns-2 mt-12">
+              <aside className="py-12 w-125">
+                <img
+                  className="rounded-3xl hover:shadow-lg opacity-100 transition-all hover:bg-purple-600 hover:opacity-80"
+                  src="./src/assets/images/smiling-girl-computer-desktop.jpg"
+                  alt="Smiling Girl"
+                />
+              </aside>
+              <article className="">
+                <Heading classStyle="text-4xl font-semibold text-gray-800 leading-12 ">
+                  Passionate about creating meaningful <br /> digital
+                  experiences
+                </Heading>
+                <Paragraph classStyle="text-gray-500 mt-10">
+                  With over 5 years of experience in digital design, I
+                  specialize in creating user-centered solutions that bridge the
+                  gap between functionality and aesthetics. My approach combines
+                  strategic thinking with creative execution to deliver
+                  impactful results.
+                </Paragraph>
+                <Paragraph classStyle="text-gray-500 mt-10">
+                  I believe that great design is not just about how it looks,
+                  but how it works and how it makes people feel. Every project
+                  is an opportunity to solve problems and create connections
+                  that matter.
+                </Paragraph>
+                <Paragraph classStyle="text-gray-500 mt-10">
+                  When I'm not designing, you'll find me exploring new
+                  technologies, sketching ideas, or seeking inspiration in
+                  nature and architecture.
+                </Paragraph>
+
+                <div className="mt-12 space-y-6 ">
+                  <Button
+                    buttonStyle="px-6 py-3  cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
+                    type="button"
+                    title="UI/UX Design"
+                  />
+                  <Button
+                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    type="button"
+                    title="Web Development"
+                  />
+                  <Button
+                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    type="button"
+                    title="Brand Identity"
+                  />
+                  <Button
+                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    type="button"
+                    title="More Graphics"
+                  />
+                  <Button
+                    buttonStyle="px-6 py-3  cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    type="button"
+                    title="Prototyping"
+                  />
+                  <Button
+                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    type="button"
+                    title="Desing Systems"
+                  />
+                </div>
+              </article>
+            </section>
           </div>
         </div>
         {/* About Section End */}

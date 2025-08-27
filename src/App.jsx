@@ -4,6 +4,7 @@ import Paragraph from "./components/Paragraph/paragraph";
 import Span from "./components/span/Span";
 import Divider from "./components/span/divider";
 import Button from "./components/Button/button";
+import HeadingWithDivider from "./components/Headings/heading-with-divider";
 
 const App = () => {
   return (
@@ -54,18 +55,16 @@ const App = () => {
         {/* About Section Start */}
         <div className="bg-white">
           <div className="container mx-auto py-40">
-            <div className="text-center group">
-              <Heading
-                classStyle="text-5xl text-color font-bold"
-                title="About Me"
-              />
-              <Divider
-                parentStyle="flex justify-center items-center my-8"
-                childStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
-              />
-            </div>
+            <HeadingWithDivider
+              parentStyle="text-center group"
+              headingTitle="About Me"
+              headingStyle="text-5xl text-color font-bold"
+              dividerParentStyle="flex justify-center items-center my-8"
+              dividerChildStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
+            />
 
             <section className="columns-2 mt-12">
+              {/* Left Section */}
               <div className="py-12">
                 <div className="relative overflow-hidden rounded-lg transition-all duration-500 shadow-2xl w-125 ">
                   <img
@@ -76,7 +75,9 @@ const App = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500/15 to-pink-500/15 hover:from-purple-500/10 hover:to-pink-500/10 transition-all duration-500 ease-in-out"></div>
                 </div>
               </div>
-              <article className="">
+
+              {/* Right Section */}
+              <article className="p-0 mx-0 w-full">
                 <Heading classStyle="text-4xl font-semibold text-gray-800 leading-12 ">
                   Passionate about creating meaningful <br /> digital
                   experiences
@@ -137,6 +138,12 @@ const App = () => {
           </div>
         </div>
         {/* About Section End */}
+
+        {/*Work Section Start*/}
+        <div className="bg-white">
+          <Heading />
+        </div>
+        {/*Work Section End*/}
       </main>
     </div>
   );

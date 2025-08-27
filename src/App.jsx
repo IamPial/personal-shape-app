@@ -66,13 +66,16 @@ const App = () => {
             </div>
 
             <section className="columns-2 mt-12">
-              <aside className="py-12 w-125">
-                <img
-                  className="rounded-3xl hover:shadow-lg opacity-100 transition-all hover:bg-purple-600 hover:opacity-80"
-                  src="./src/assets/images/smiling-girl-computer-desktop.jpg"
-                  alt="Smiling Girl"
-                />
-              </aside>
+              <div className="py-12">
+                <div className="relative overflow-hidden rounded-lg transition-all duration-500 shadow-2xl w-125 ">
+                  <img
+                    src="./src/assets/images/smiling-girl-computer-desktop.jpg"
+                    alt="Profile"
+                    className=" object-cover filter transition-all duration-500 hover:hue-rotate-180 hover:saturate-150 hover:brightness-110 "
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/15 to-pink-500/15 hover:from-purple-500/10 hover:to-pink-500/10 transition-all duration-500 ease-in-out"></div>
+                </div>
+              </div>
               <article className="">
                 <Heading classStyle="text-4xl font-semibold text-gray-800 leading-12 ">
                   Passionate about creating meaningful <br /> digital
@@ -99,32 +102,32 @@ const App = () => {
 
                 <div className="mt-12 space-y-6 ">
                   <Button
-                    buttonStyle="px-6 py-3  cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
+                    buttonStyle="px-6 py-3  hover:scale-110 cursor-pointer hover:bg-indigo-500 transition-all duration-300 hover:ring-indigo-500 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
                     type="button"
                     title="UI/UX Design"
                   />
                   <Button
-                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    buttonStyle="px-6 py-3 ml-4 hover:scale-110 cursor-pointer hover:bg-indigo-500 transition-all duration-300 hover:ring-indigo-500 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
                     type="button"
                     title="Web Development"
                   />
                   <Button
-                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    buttonStyle="px-6 py-3 ml-4 hover:scale-110 cursor-pointer hover:bg-indigo-500 transition-all duration-300 hover:ring-indigo-500 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
                     type="button"
                     title="Brand Identity"
                   />
                   <Button
-                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    buttonStyle="px-6 py-3 ml-4 hover:scale-110 cursor-pointer hover:bg-indigo-500 transition-all duration-300 hover:ring-indigo-500 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
                     type="button"
                     title="More Graphics"
                   />
                   <Button
-                    buttonStyle="px-6 py-3  cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    buttonStyle="px-6 py-3  hover:scale-110 cursor-pointer hover:bg-indigo-500 transition-all duration-300 hover:ring-indigo-500 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
                     type="button"
                     title="Prototyping"
                   />
                   <Button
-                    buttonStyle="px-6 py-3 ml-4 cursor-pointer hover:bg-purple-700 transition-all duration-300 hover:ring-purple-700 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white "
+                    buttonStyle="px-6 py-3 ml-4 hover:scale-110 cursor-pointer hover:bg-indigo-500 transition-all duration-300 hover:ring-indigo-500 ring-2 ring-gray-300 text-indigo-500 rounded-4xl font-medium text-sm hover:text-white bg-white"
                     type="button"
                     title="Desing Systems"
                   />

@@ -5,3 +5,14 @@
 .my-bg {
   background-image: linear-gradient(to right, #7070d2, #d186e3);
 }
+
+/* .asideWidth {
+  width: 500px;
+}
+  color: #c2c0e5
+  } */
+
+.aside-img:hover {
+  background-color: #c959e6;
+  opacity: 0.7;
+}

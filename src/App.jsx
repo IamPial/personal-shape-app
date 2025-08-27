@@ -6,6 +6,7 @@ import Divider from "./components/span/divider";
 import Button from "./components/Button/button";
 import HeadingWithDivider from "./components/Headings/heading-with-divider";
 import ImgWithEffects from "./components/imageEffects/img-with-effects";
+import Cards from "./components/card";
 
 const App = () => {
   return (
@@ -143,26 +144,34 @@ const App = () => {
         <div className="bg-white">
           <div className="container mx-auto py-20 ">
             <HeadingWithDivider
-              parentStyle="text-center group"
+              parentStyle="text-center group mb-15"
               headingTitle="Featured Work"
               headingStyle="text-5xl text-color font-bold"
               dividerParentStyle="flex justify-center items-center my-8"
               dividerChildStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
             />
 
-            <div className=" mt-10">
-              <div className="card  bg-white w-96 shadow-sm ">
-                <figure className="h-48">
-                  <img src="./src/assets/images/card1.jpg" alt="Shoes" />
+            <div className=" mt-10 columns-3 gap-x-10">
+              {/* <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
+                <figure className="relative overflow-hidden cursor-pointer">
+                  <img
+                    src="./src/assets/images/card1.jpg"
+                    alt="Workspace"
+                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
+                  />
+                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
                 </figure>
+
                 <div className="card-body px-9 py-11">
-                  <h2 className="card-title text-gray-800 text-2xl">
-                    E-commerce Platform
-                  </h2>
-                  <p className="text-gray-500 text-base mb-5">
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
+                  <Heading
+                    classStyle="card-title text-gray-800 text-2xl"
+                    title="E-commerce Platform"
+                  />
+                  <Paragraph
+                    classStyle="text-gray-500 text-base mb-5"
+                    title="A card component has a figure, a body part, and inside body
+                    there are title and actions parts"
+                  />
                   <div className="card-actions justify-start">
                     <Button
                       buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
@@ -187,96 +196,230 @@ const App = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
+
+              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
+                <figure className="relative overflow-hidden cursor-pointer">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="./src/assets/images/card2.jpg"
+                    alt="Workspace"
+                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
                   />
+                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                <div className="card-body px-9 py-11">
+                  <Heading
+                    classStyle="card-title text-gray-800 text-2xl"
+                    title="Brand Identity System"
+                  />
+                  <Paragraph
+                    classStyle="text-gray-500 text-base mb-5"
+                    title="Complete visual identity redesign for a tech startup, including logo, guidelines,and digital assets. Creating a cohesive brand experience across all touchpoints."
+                  />
+                  <div className="card-actions justify-start">
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Illustrator"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Photoshop"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Figma"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
+                      type="button"
+                      title="After Effects"
+                    />
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
+
+              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
+                <figure className="relative overflow-hidden cursor-pointer">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="./src/assets/images/card3.jpg"
+                    alt="Workspace"
+                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
                   />
+                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                <div className="card-body px-9 py-11">
+                  <Heading
+                    classStyle="card-title text-gray-800 text-2xl"
+                    title="Mobile App Design"
+                  />
+                  <Paragraph
+                    classStyle="text-gray-500 text-base mb-5"
+                    title="Intuitive mobile app interface for a fitness tracking application wiht focus on accessibility and user engagement through gamification."
+                  />
+                  <div className="card-actions justify-start">
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Figma"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Principle"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="React Native"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
+                      type="button"
+                      title="Lottie"
+                    />
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
+
+              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
+                <figure className="relative overflow-hidden cursor-pointer">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="./src/assets/images/card1.jpg"
+                    alt="Workspace"
+                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
                   />
+                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                <div className="card-body px-9 py-11">
+                  <Heading
+                    classStyle="card-title text-gray-800 text-2xl"
+                    title="E-commerce Platform"
+                  />
+                  <Paragraph
+                    classStyle="text-gray-500 text-base mb-5"
+                    title="A card component has a figure, a body part, and inside body
+                    there are title and actions parts"
+                  />
+                  <div className="card-actions justify-start">
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="React"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Node.JS"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="MongoDB"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
+                      type="button"
+                      title="Stripe"
+                    />
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
+
+              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
+                <figure className="relative overflow-hidden cursor-pointer">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="./src/assets/images/card1.jpg"
+                    alt="Workspace"
+                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
                   />
+                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                <div className="card-body px-9 py-11">
+                  <Heading
+                    classStyle="card-title text-gray-800 text-2xl"
+                    title="E-commerce Platform"
+                  />
+                  <Paragraph
+                    classStyle="text-gray-500 text-base mb-5"
+                    title="A card component has a figure, a body part, and inside body
+                    there are title and actions parts"
+                  />
+                  <div className="card-actions justify-start">
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="React"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Node.JS"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="MongoDB"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
+                      type="button"
+                      title="Stripe"
+                    />
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
+
+              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
+                <figure className="relative overflow-hidden cursor-pointer">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="./src/assets/images/card1.jpg"
+                    alt="Workspace"
+                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
                   />
+                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                <div className="card-body px-9 py-11">
+                  <Heading
+                    classStyle="card-title text-gray-800 text-2xl"
+                    title="E-commerce Platform"
+                  />
+                  <Paragraph
+                    classStyle="text-gray-500 text-base mb-5"
+                    title="A card component has a figure, a body part, and inside body
+                    there are title and actions parts"
+                  />
+                  <div className="card-actions justify-start">
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="React"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="Node.JS"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
+                      type="button"
+                      title="MongoDB"
+                    />
+                    <Button
+                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
+                      type="button"
+                      title="Stripe"
+                    />
                   </div>
                 </div>
               </div> */}
+              <Cards />
             </div>
           </div>
         </div>

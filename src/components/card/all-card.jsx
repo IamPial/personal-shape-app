@@ -130,17 +130,3 @@ const AllCard = ({
 };
 
 export default AllCard;
-
-// <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 ">
-{
-  /* card-body: className="card-body px-9 py-11" */
-}
-{
-  /* card-heading: "card-title text-gray-800 text-2xl" */
-}
-{
-  /* card-para : "text-gray-500 text-base mb-5" */
-}
-{
-  /* card-btn: "card-actions justify-start" */
-}

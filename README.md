@@ -1,12 +1,56 @@
-# React + Vite
+# Personal Shape App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is made with learning and understanding purpose of React props.I'm here using this just give and take game with props. It doesn't have functionality, it's a design .. when i know more about functionality with React, I will add these things with state In Sha Allah. And lastly, this is not responsive for every devices because i don't focus on styling.
 
-Currently, two official plugins are available:
+## Technology And Library Usage:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React
+TailwindCSS
+Daisy UI
+Swiper.js
+Vite
 
-## Expanding the ESLint configuration
+## Installation & Setup:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Clone the repo
+
+git clone https://github.com/your-username/personal-shape-app.git
+
+### Navigate into the project
+
+cd portfolio-app
+
+### Install dependencies
+
+npm install
+
+### Start development server
+
+npm run dev
+
+## ScreenShots
+
+![App Screenshot](./public/personal-shape-app.jpg);
+
+## Future Improvements
+
+Make it fully responsive
+
+Add dark mode
+
+Add animations with Framer Motion
+
+Improve accessibility
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to open a PR or issue.
+
+## License
+
+This project is licensed under the MIT License – feel free to use it!
+
+## Author
+
+Md Pial

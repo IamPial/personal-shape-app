@@ -1,6 +1,6 @@
 import ListItem from "./list-item";
 
-const Navbar = () => {
+const HeaderNavbar = () => {
   return (
     <nav>
       <ul className="text-black flex items-center font-semibold ">
@@ -29,4 +29,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HeaderNavbar;

@@ -1,14 +1,19 @@
-import AllCard from "./all-card";
+import MainCards from "./main-cards";
+import MainHeadingWithDivider from "../Headings/main-heading-divider";
+
 const Cards = () => {
   return (
-    <AllCard
-      mainCardStyle="height-520 card group rounded-3xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96  block shadow-xl border-gray-200 mb-16"
-      cardBodyStyle="card-body px-9 py-11"
-      cardBtnAction="card-actions justify-start"
-      headingStyle="card-title text-gray-800 text-2xl mb-5"
-      paraStyle="text-gray-500 text-base mb-5 text-left"
-    />
+    <div className="bg-white">
+      <div className="container mx-auto py-20 ">
+        <MainHeadingWithDivider
+          title="Featured Work"
+          headingStyle="text-5xl text-color font-bold"
+        />
+        <div className=" mt-10 columns-3 gap-x-10">
+          <MainCards />
+        </div>
+      </div>
+    </div>
   );
 };
-
 export default Cards;

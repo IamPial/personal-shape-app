@@ -1,14 +1,11 @@
-import InputFormBody from "./form-body";
-import FormHeading from "./form-heading";
-
-const MainForm = () => {
+import MainForm from "./main-form";
+const Forms = () => {
   return (
-    <div>
-      <FormHeading />
-      <div className="px-70 py-20">
-        <InputFormBody />
+    <div className=" bg-linear-[120deg,#3c4ab3,#9534a2]">
+      <div className="container mx-auto py-36 pb-10">
+        <MainForm />
       </div>
     </div>
   );
 };
-export default MainForm;
+export default Forms;

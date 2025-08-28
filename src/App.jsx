@@ -5,6 +5,7 @@ import Span from "./components/span/Span";
 import Divider from "./components/span/divider";
 import Button from "./components/Button/button";
 import HeadingWithDivider from "./components/Headings/heading-with-divider";
+import MainHeadingWithDivider from "./components/Headings/main-heading-divider";
 import ImgWithEffects from "./components/imageEffects/img-with-effects";
 import Cards from "./components/card";
 
@@ -27,7 +28,7 @@ const App = () => {
 
       <main>
         {/* Hero Section Start */}
-        <div class=" bg-linear-[120deg,#6900e7,#e38df2]">
+        <div className=" bg-linear-[120deg,#3c4ab3,#9534a2]">
           <div className="container mx-auto pt-20 pb-10">
             <div className="text-center">
               <Span classStyle="text-white text-base uppercase font-medium">
@@ -57,12 +58,9 @@ const App = () => {
         {/* About Section Start */}
         <div className="bg-white">
           <div className="container mx-auto py-30">
-            <HeadingWithDivider
-              parentStyle="text-center group"
-              headingTitle="About Me"
+            <MainHeadingWithDivider
+              title="About Me"
               headingStyle="text-5xl text-color font-bold"
-              dividerParentStyle="flex justify-center items-center my-8"
-              dividerChildStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
             />
 
             <section className="columns-2 mt-12">
@@ -143,287 +141,91 @@ const App = () => {
         {/*Work Section Start*/}
         <div className="bg-white">
           <div className="container mx-auto py-20 ">
-            <HeadingWithDivider
-              parentStyle="text-center group mb-15"
-              headingTitle="Featured Work"
+            <MainHeadingWithDivider
+              title="Featured Work"
               headingStyle="text-5xl text-color font-bold"
-              dividerParentStyle="flex justify-center items-center my-8"
-              dividerChildStyle="w-20 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full shadow-md transition-all duration-300 group-hover:w-24"
             />
-
             <div className=" mt-10 columns-3 gap-x-10">
-              {/* <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
-                <figure className="relative overflow-hidden cursor-pointer">
-                  <img
-                    src="./src/assets/images/card1.jpg"
-                    alt="Workspace"
-                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
-                </figure>
-
-                <div className="card-body px-9 py-11">
-                  <Heading
-                    classStyle="card-title text-gray-800 text-2xl"
-                    title="E-commerce Platform"
-                  />
-                  <Paragraph
-                    classStyle="text-gray-500 text-base mb-5"
-                    title="A card component has a figure, a body part, and inside body
-                    there are title and actions parts"
-                  />
-                  <div className="card-actions justify-start">
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="React"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Node.JS"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="MongoDB"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
-                      type="button"
-                      title="Stripe"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
-                <figure className="relative overflow-hidden cursor-pointer">
-                  <img
-                    src="./src/assets/images/card2.jpg"
-                    alt="Workspace"
-                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
-                </figure>
-
-                <div className="card-body px-9 py-11">
-                  <Heading
-                    classStyle="card-title text-gray-800 text-2xl"
-                    title="Brand Identity System"
-                  />
-                  <Paragraph
-                    classStyle="text-gray-500 text-base mb-5"
-                    title="Complete visual identity redesign for a tech startup, including logo, guidelines,and digital assets. Creating a cohesive brand experience across all touchpoints."
-                  />
-                  <div className="card-actions justify-start">
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Illustrator"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Photoshop"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Figma"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
-                      type="button"
-                      title="After Effects"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
-                <figure className="relative overflow-hidden cursor-pointer">
-                  <img
-                    src="./src/assets/images/card3.jpg"
-                    alt="Workspace"
-                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
-                </figure>
-
-                <div className="card-body px-9 py-11">
-                  <Heading
-                    classStyle="card-title text-gray-800 text-2xl"
-                    title="Mobile App Design"
-                  />
-                  <Paragraph
-                    classStyle="text-gray-500 text-base mb-5"
-                    title="Intuitive mobile app interface for a fitness tracking application wiht focus on accessibility and user engagement through gamification."
-                  />
-                  <div className="card-actions justify-start">
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Figma"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Principle"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="React Native"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
-                      type="button"
-                      title="Lottie"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
-                <figure className="relative overflow-hidden cursor-pointer">
-                  <img
-                    src="./src/assets/images/card1.jpg"
-                    alt="Workspace"
-                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
-                </figure>
-
-                <div className="card-body px-9 py-11">
-                  <Heading
-                    classStyle="card-title text-gray-800 text-2xl"
-                    title="E-commerce Platform"
-                  />
-                  <Paragraph
-                    classStyle="text-gray-500 text-base mb-5"
-                    title="A card component has a figure, a body part, and inside body
-                    there are title and actions parts"
-                  />
-                  <div className="card-actions justify-start">
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="React"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Node.JS"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="MongoDB"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
-                      type="button"
-                      title="Stripe"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
-                <figure className="relative overflow-hidden cursor-pointer">
-                  <img
-                    src="./src/assets/images/card1.jpg"
-                    alt="Workspace"
-                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
-                </figure>
-
-                <div className="card-body px-9 py-11">
-                  <Heading
-                    classStyle="card-title text-gray-800 text-2xl"
-                    title="E-commerce Platform"
-                  />
-                  <Paragraph
-                    classStyle="text-gray-500 text-base mb-5"
-                    title="A card component has a figure, a body part, and inside body
-                    there are title and actions parts"
-                  />
-                  <div className="card-actions justify-start">
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="React"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Node.JS"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="MongoDB"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
-                      type="button"
-                      title="Stripe"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="card group rounded-4xl transition-all duration-400 hover:shadow-2xl hover:-translate-y-5 bg-white w-96 shadow-xl border-gray-200 mb-12">
-                <figure className="relative overflow-hidden cursor-pointer">
-                  <img
-                    src="./src/assets/images/card1.jpg"
-                    alt="Workspace"
-                    className=" w-full h-48 object-cover filter  hover:hue-rotate-0 hover:saturate-100 hover:brightness-100 ease-out"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-purple-500/20 bg-transparent duration-300"></div>
-                </figure>
-
-                <div className="card-body px-9 py-11">
-                  <Heading
-                    classStyle="card-title text-gray-800 text-2xl"
-                    title="E-commerce Platform"
-                  />
-                  <Paragraph
-                    classStyle="text-gray-500 text-base mb-5"
-                    title="A card component has a figure, a body part, and inside body
-                    there are title and actions parts"
-                  />
-                  <div className="card-actions justify-start">
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="React"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="Node.JS"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white"
-                      type="button"
-                      title="MongoDB"
-                    />
-                    <Button
-                      buttonStyle="text-gray-500 font-medium text-sm rounded-4xl transition-all duration-300 px-4 py-2 bg-white hover:bg-indigo-500 hover:text-white mt-1"
-                      type="button"
-                      title="Stripe"
-                    />
-                  </div>
-                </div>
-              </div> */}
               <Cards />
             </div>
           </div>
         </div>
         {/*Work Section End*/}
+
+        {/* Form Section Start */}
+        <div className=" bg-linear-[120deg,#3c4ab3,#9534a2]">
+          <div className="container mx-auto py-36">
+            <div className="text-white">
+              <MainHeadingWithDivider
+                title="Let's Work Together"
+                headingStyle="text-5xl text-white font-bold "
+              />
+              <Paragraph
+                classStyle="text-lg text-center px-65"
+                title="Ready to bring your vision to life? Let's discuss how we can create something amazing together. I'm always excited to take on new challenges and collaborate on innovative orojects."
+              />
+            </div>
+            <div className="px-70 py-20">
+              <form>
+                <div className="flex gap-5">
+                  <div className="w-full">
+                    <label htmlFor="name" className="text-white font-bold ">
+                      Name:
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="bg-rgba-color w-full rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4  focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300"
+                      placeholder="Your full name"
+                    />
+                  </div>
+                  <div className="w-full">
+                    <label htmlFor="name" className="text-white font-bold ">
+                      Email:
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      className="bg-rgba-color w-full rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4  focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300"
+                      placeholder="Your full name"
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-10">
+                  <label htmlFor="name" className="text-white font-bold ">
+                    Email:
+                  </label>
+                  <input
+                    type="text"
+                    name="email"
+                    className="bg-rgba-color w-full rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4  focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div className="mt-10">
+                  <label htmlFor="message" className="text-white font-bold ">
+                    Message:
+                  </label>
+                  <textarea
+                    name="message"
+                    placeholder="Explain why you want contact with me!"
+                    className=" bg-rgba-color  w-full h-40 rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4 focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300 "
+                  ></textarea>
+                </div>
+                <div className="mt-10">
+                  <Button
+                    buttonStyle=" w-full  form-btn-color rounded-4xl font-bold 
+                  hover:shadow-indigo-600/50 hover:shadow-2xl hover:-translate-y-1 border-none outline-none text-lg mt-3 px-5 py-4 transition-all duration-300 "
+                    type="submit"
+                    title="Submit"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        {/* Form Section End */}
       </main>
     </div>
   );

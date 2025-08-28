@@ -10,6 +10,7 @@ import ImgWithEffects from "./components/imageEffects/img-with-effects";
 import Cards from "./components/card";
 import InputForm from "./components/Input/form-body";
 import MainForm from "./components/Input";
+import ListItem from "./components/Navbar/list-item";
 
 const App = () => {
   return (
@@ -162,6 +163,40 @@ const App = () => {
         </div>
         {/* Form Section End */}
       </main>
+
+      <footer>
+        <div className="bg-blue-950 px-20 py-14">
+          <div className="flex justify-between">
+            <p className="text-base text-white">Hello This is pial</p>
+            <div>
+              <nav>
+                <ul className="flex ">
+                  <ListItem
+                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    links="#"
+                    name="Privacy"
+                  />
+                  <ListItem
+                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    links="#"
+                    name="Privacy"
+                  />
+                  <ListItem
+                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    links="#"
+                    name="Privacy"
+                  />
+                  <ListItem
+                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    links="#"
+                    name="Privacy"
+                  />
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -4,11 +4,11 @@ This project is made with learning and understanding purpose of React props.I'm 
 
 ## Technology And Library Usage:
 
-React
-TailwindCSS
-Daisy UI
-Swiper.js
-Vite
+- React
+- TailwindCSS
+- Daisy UI
+- Swiper.js
+- Vite
 
 ## Installation & Setup:
 
@@ -16,15 +16,15 @@ Vite
 
 git clone https://github.com/your-username/personal-shape-app.git
 
-### Navigate into the project
+#### Navigate into the project
 
 cd portfolio-app
 
-### Install dependencies
+#### Install dependencies
 
 npm install
 
-### Start development server
+#### Start development server
 
 npm run dev
 
@@ -34,13 +34,13 @@ npm run dev
 
 ## Future Improvements
 
-Make it fully responsive
+- Make it fully responsive
 
-Add dark mode
+- Add dark mode
 
-Add animations with Framer Motion
+- Add animations with Framer Motion
 
-Improve accessibility
+- Improve accessibility
 
 ## Contributing
 

@@ -8,6 +8,8 @@ import HeadingWithDivider from "./components/Headings/heading-with-divider";
 import MainHeadingWithDivider from "./components/Headings/main-heading-divider";
 import ImgWithEffects from "./components/imageEffects/img-with-effects";
 import Cards from "./components/card";
+import InputForm from "./components/Input/form-body";
+import MainForm from "./components/Input";
 
 const App = () => {
   return (
@@ -154,75 +156,8 @@ const App = () => {
 
         {/* Form Section Start */}
         <div className=" bg-linear-[120deg,#3c4ab3,#9534a2]">
-          <div className="container mx-auto py-36">
-            <div className="text-white">
-              <MainHeadingWithDivider
-                title="Let's Work Together"
-                headingStyle="text-5xl text-white font-bold "
-              />
-              <Paragraph
-                classStyle="text-lg text-center px-65"
-                title="Ready to bring your vision to life? Let's discuss how we can create something amazing together. I'm always excited to take on new challenges and collaborate on innovative orojects."
-              />
-            </div>
-            <div className="px-70 py-20">
-              <form>
-                <div className="flex gap-5">
-                  <div className="w-full">
-                    <label htmlFor="name" className="text-white font-bold ">
-                      Name:
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      className="bg-rgba-color w-full rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4  focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div className="w-full">
-                    <label htmlFor="name" className="text-white font-bold ">
-                      Email:
-                    </label>
-                    <input
-                      type="text"
-                      name="email"
-                      className="bg-rgba-color w-full rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4  focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-10">
-                  <label htmlFor="name" className="text-white font-bold ">
-                    Email:
-                  </label>
-                  <input
-                    type="text"
-                    name="email"
-                    className="bg-rgba-color w-full rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4  focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300"
-                    placeholder="Your full name"
-                  />
-                </div>
-                <div className="mt-10">
-                  <label htmlFor="message" className="text-white font-bold ">
-                    Message:
-                  </label>
-                  <textarea
-                    name="message"
-                    placeholder="Explain why you want contact with me!"
-                    className=" bg-rgba-color  w-full h-40 rounded-xl border-none outline-none ring-1 ring-gray-500 focus:ring-indigo-500 text-lg mt-3 px-5 py-4 focus:text-white shadow-sm focus:shadow-indigo-600 transition-all duration-300 "
-                  ></textarea>
-                </div>
-                <div className="mt-10">
-                  <Button
-                    buttonStyle=" w-full  form-btn-color rounded-4xl font-bold 
-                  hover:shadow-indigo-600/50 hover:shadow-2xl hover:-translate-y-1 border-none outline-none text-lg mt-3 px-5 py-4 transition-all duration-300 "
-                    type="submit"
-                    title="Submit"
-                  />
-                </div>
-              </form>
-            </div>
+          <div className="container mx-auto py-36 pb-10">
+            <MainForm />
           </div>
         </div>
         {/* Form Section End */}

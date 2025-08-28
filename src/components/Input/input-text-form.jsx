@@ -26,7 +26,7 @@ const InputTextForm = () => {
         />
       </div>
       <InputTextField
-        mainStyle="w-full"
+        mainStyle="w-full mt-10"
         lableName="subject"
         labelStyle="text-white font-bold "
         labelTitle="Subject"

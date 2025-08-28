@@ -30,7 +30,7 @@ npm run dev
 
 ## ScreenShots
 
-![App Screenshot](./public/personal-shape-app.jpg);
+![App Screenshot](./public/personal-shape-app.jpg)
 
 ## Future Improvements
 

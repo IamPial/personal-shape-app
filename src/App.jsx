@@ -165,31 +165,33 @@ const App = () => {
       </main>
 
       <footer>
-        <div className="bg-blue-950 px-20 py-14">
-          <div className="flex justify-between">
-            <p className="text-base text-white">Hello This is pial</p>
+        <div className="footer-bg px-16 pr-10 py-10 ">
+          <div className="flex justify-between mt-10">
+            <p className="text-base text-white my-2">
+              &copy;2025 Personal Shape. All rights reserved.
+            </p>
             <div>
               <nav>
                 <ul className="flex ">
                   <ListItem
-                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    listStyle="m-2 px-2 py-1 hover:text-purple-400 transition duration-300"
                     links="#"
-                    name="Privacy"
+                    name="Privacy Policy"
                   />
                   <ListItem
-                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    listStyle="m-2 px-2 py-1 hover:text-purple-400 transition duration-300"
                     links="#"
-                    name="Privacy"
+                    name="Term of Use"
                   />
                   <ListItem
-                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    listStyle="m-2 px-2 py-1 hover:text-purple-400 transition duration-300"
                     links="#"
-                    name="Privacy"
+                    name="Sitemap"
                   />
                   <ListItem
-                    listStyle="m-2 px-4 py-1 hover:text-purple-400 transition duration-300"
+                    listStyle="m-2 px-2 py-1 hover:text-purple-400 transition duration-300"
                     links="#"
-                    name="Privacy"
+                    name="Provided by TemplateMo"
                   />
                 </ul>
               </nav>
